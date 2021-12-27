@@ -1,11 +1,13 @@
 #include<stdio.h>
-void input(int *a,int *b)
+int input(int a,int b)
 {
-  scanf("%d %d" ,a,b);
+  scanf("%d",a);
+  return a;
 }
-void add(int a,int b,int*sum)
+int add(int a,int b,int sum)
 {
-  *sum =a+b;
+  sum =a+b;
+  return sum;
 }
 void output(int a,int b, int sum)
 {
@@ -13,9 +15,10 @@ void output(int a,int b, int sum)
 }
 int main()
 {
-  int a,b,sum;
+  int a,b,sum,a1,a2,a3;
  printf("enter two numbers\n");
- input(&a,&b);
- add (a,b,&sum) ;
- output(a,b,sum);
+ a1=input(&a,&b);
+ a2=input(&a,&b);
+ a3=add(a1,a2,sum) ;
+ output(a1,b2,a3);
 }

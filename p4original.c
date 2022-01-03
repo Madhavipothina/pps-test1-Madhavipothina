@@ -16,7 +16,7 @@ int input()
 {
   int i;
   scanf("%d" ,&i);
-return i;
+ return i;
 }
 int cmp(int a,int b, int c)
 {

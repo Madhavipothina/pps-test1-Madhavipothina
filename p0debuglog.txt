@@ -1,4 +1,4 @@
-gcc ./p0original.c
+ gcc -g p0original.c
  gdb a.out
 GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
 Copyright (C) 2018 Free Software Foundation, Inc.
@@ -12,18 +12,15 @@ For bug reporting instructions, please see:
 <http://www.gnu.org/software/gdb/bugs/>.
 Find the GDB manual and other documentation resources online at:
 <http://www.gnu.org/software/gdb/documentation/>.
-For help, type "help".
+---Type <return> to continue, or q <return> to quit---bmFor help, type "help".
 Type "apropos word" to search for commands related to "word"...
-Reading symbols from a.out...(no debugging symbols found)...done.
-(gdb) b
-No default breakpoint address now.
+Reading symbols from a.out...done.
 (gdb) r
 Starting program: /home/runner/pps-test1-Madhavipothina/a.out 
 warning: Error disabling address space randomization: Operation not permitted
 MADHAVI
-[Inferior 1 (process 89) exited with code 010]
+[Inferior 1 (process 75) exited with code 010]
 (gdb) n
 The program is not being run.
-(gdb) c
-The program is not being run.
-(gdb) q 
+(gdb) q
+ 

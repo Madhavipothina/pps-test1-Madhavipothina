@@ -1,23 +1,35 @@
 #include<stdio.h>
-int input_n();
-int sum_n(int n);
-void output(int n,int sum);
-int main()
-{
-  int i,sum , 
-}
 int input_n()
 {
- int i;
-  for(i=0,i<n,i++);
-  a[i]=i;
+  int n;
+  printf("enter the numbers :\n");
+  scanf("%d" ,&n);
+  return n;
 }
-int sum n(int n) 
+int sum_n(int n)
 {
- sum=sum+a[i] ;
- return sum;
+  int i,sum=0;
+  for(i=1;i<=n;i++)
+  {
+    sum=sum+i;
+  }
+  return sum;
 }
-void output(int n,int sum)
+void output (int sum,int n)
 {
-  printf("sum of %d numbers is %d\n", i, sum );
+  int j;
+  for(j=1;j<n;j++)
+  {
+    printf("%d+" ,j);
+  }
+   printf("%d is %d" ,j,sum);
 }
+int main()
+{
+  int n,sum,i;
+  n=input_n();
+  sum =sum_n(n);
+  output(sum,n);
+}
+
+
